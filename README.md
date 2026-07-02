@@ -1,35 +1,75 @@
 # PT Supra Airways Tbk
 
-React landing page untuk brand fiktif **PT Supra Airways Tbk** dengan konsep maskapai premium: navy, gold, red accent, executive aviation, dan tagline **Legendaris di Udara**.
+React landing page untuk brand fiktif **PT Supra Airways Tbk** dengan konsep maskapai premium: navy, gold, red accent, executive aviation, executive lounge, dan tagline **Redefining Premium Travel**.
 
-## Logo Options
+## New Logo Assets
 
-### 1. Wingmark Classic
-![Wingmark Classic](public/logos/supra-logo-wingmark.svg)
+Logo lama berbasis SVG sudah diganti arahnya ke logo baru: **gold wing emblem** dengan **red accent**.
 
-Logo utama untuk corporate signage, hero section, dokumen resmi, dan header website.
+### Primary Logo / Label Version
 
-### 2. Skyline Emblem
-![Skyline Emblem](public/logos/supra-logo-emblem.svg)
+![Supra Airways Primary Logo](public/branding/supra-logo-full.png)
 
-Logo emblem untuk favicon, patch seragam, aplikasi mobile, dan brand mark kecil.
+Versi utama dengan icon + teks **Supra Airways** + **PT Supra Airways Tbk**. Dipakai untuk:
 
-### 3. Supra Wordmark
-![Supra Wordmark](public/logos/supra-logo-wordmark.svg)
+- hero section website
+- brand identity section
+- signage kantor / lounge
+- company profile
+- proposal investor
+- deck presentasi
 
-Wordmark lebar untuk banner, billboard, company profile, dan livery pesawat.
+### Icon Only Version
 
-### 4. Tailfin Mark
-![Tailfin Mark](public/logos/supra-logo-tailfin.svg)
+![Supra Airways Icon](public/branding/supra-logo-icon.png)
 
-Ikon tailfin untuk ekor pesawat, boarding pass, merchandise, dan elemen grafis brand.
+Versi icon-only tanpa nama dan tanpa background putih. Dipakai untuk:
+
+- favicon website
+- navbar icon
+- footer icon
+- app icon
+- social media avatar
+- badge / patch seragam
+- boarding pass dan tail mark
+
+## Landing Page Content
+
+Landing page sekarang diarahkan untuk menampilkan konteks lengkap **PT Supra Airways Tbk**:
+
+- premium airline hero section
+- logo brand dan icon-only
+- executive lounge / reception visual
+- boardroom direksi
+- corporate frontdesk
+- layanan premium lounge, boarding gate, dan flight information
+- jajaran direksi perusahaan
+- flight booking demo section
+
+## Branding Folder Structure
+
+Asset final PNG/WebP ditempatkan di:
+
+```txt
+public/branding/supra-logo-full.png
+public/branding/supra-logo-icon.png
+public/branding/showcase-lounge.png
+public/branding/showcase-boardroom.png
+public/branding/showcase-reception.png
+public/branding/directors/komisaris.png
+public/branding/directors/direktur-utama.png
+public/branding/directors/cfio.png
+public/branding/directors/direktur-pemasaran.png
+public/branding/directors/direktur-relasi-bisnis.png
+public/branding/directors/direktur-kesehatan-awak.png
+```
 
 ## Tech Stack
 
 - React
 - Vite
 - CSS custom tanpa framework
-- SVG logo assets di folder `public/logos`
+- PNG/WebP brand assets di folder `public/branding`
 
 ## Development
 
