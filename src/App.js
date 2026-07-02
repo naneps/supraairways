@@ -2,6 +2,13 @@ import React from 'react';
 
 const h = React.createElement;
 
+const logo = {
+  full: '/branding/supra-logo-full.png',
+  icon: '/branding/supra-logo-icon.png',
+  fullFallback: '/logos/supra-logo-wordmark.svg',
+  iconFallback: '/logos/supra-logo-emblem.svg',
+};
+
 const stats = [
   ['125+', 'Armada siap terbang'],
   ['42', 'Destinasi utama'],
@@ -10,120 +17,117 @@ const stats = [
 ];
 
 const services = [
+  ['Premium Lounge', 'Pengalaman lounge dengan ambience navy, gold, warm light, dan identitas brand yang konsisten.'],
+  ['Boarding Gate', 'Area keberangkatan dibuat rapi untuk memperkuat trust, direction, dan pengalaman premium.'],
+  ['Flight Information', 'Informasi rute, jadwal, dan layanan korporat disiapkan dalam visual yang modern.'],
+  ['Executive Travel', 'Layanan bisnis untuk partner perusahaan, jajaran direksi, dan customer prioritas.'],
+];
+
+const showcases = [
   {
-    title: 'Premium Passenger Experience',
-    desc: 'Dari check-in hingga boarding, pengalaman penumpang dirancang rapi, nyaman, dan terasa profesional.',
+    title: 'Executive Lounge Reception',
+    image: '/branding/showcase-lounge.png',
+    desc: 'Logo Supra Airways tampil sebagai signage utama di area lounge premium dengan material gold dan navy.',
   },
   {
-    title: 'Executive & Corporate Travel',
-    desc: 'Layanan perjalanan bisnis, jalur prioritas, dan executive lounge untuk kebutuhan korporasi.',
+    title: 'Boardroom Direksi',
+    image: '/branding/showcase-boardroom.png',
+    desc: 'Ruang meeting korporat untuk jajaran direksi, presentasi investor, dan keputusan strategis perusahaan.',
   },
   {
-    title: 'Operational Reliability',
-    desc: 'Maskapai dibangun dengan fokus pada keselamatan, maintenance armada, dan kesiapan operasional.',
-  },
-  {
-    title: 'Brand Expansion',
-    desc: 'Identitas brand siap diterapkan pada terminal, kantor, boardroom, lounge, dan platform digital.',
+    title: 'Corporate Frontdesk',
+    image: '/branding/showcase-reception.png',
+    desc: 'Tampilan frontdesk yang clean, mewah, dan cocok untuk kantor pusat PT Supra Airways Tbk.',
   },
 ];
 
-const logoVariants = [
+const directors = [
   {
-    title: 'Primary Logo / Label Version',
-    path: '/branding/supra-logo-full.png',
-    fallback: '/logos/supra-logo-wordmark.svg',
-    note: 'Versi utama yang memuat nama Supra Airways dan PT Supra Airways Tbk. Cocok untuk header website, company profile, signage, dan materi resmi.',
+    name: 'Komisaris',
+    role: 'Komisaris',
+    image: '/branding/directors/komisaris.png',
+    desc: 'Pengawasan strategis, tata kelola perusahaan, dan arah jangka panjang PT Supra Airways Tbk.',
   },
   {
-    title: 'Icon Only Version',
-    path: '/branding/supra-logo-icon.png',
-    fallback: '/logos/supra-logo-emblem.svg',
-    note: 'Versi icon-only untuk favicon, avatar aplikasi, boarding pass, social avatar, patch seragam, dan identitas visual ringkas.',
-  },
-];
-
-const touchpoints = [
-  {
-    title: 'Reception Branding',
-    desc: 'Simulasi penerapan identitas visual pada meja resepsionis dan dinding kantor agar first impression terasa premium.',
-    bullets: ['Front desk signage', 'Back wall identity', 'Lighting + premium ambience'],
+    name: 'Direktur Utama',
+    role: 'Direktur Utama',
+    image: '/branding/directors/direktur-utama.png',
+    desc: 'Memimpin arah bisnis, ekspansi rute, standar layanan, dan performa operasional maskapai.',
   },
   {
-    title: 'Airport Check-in & Departure',
-    desc: 'Penerapan logo pada area keberangkatan, check-in counter, dan signage terminal untuk memperkuat konsistensi brand.',
-    bullets: ['Departure signage', 'Counter branding', 'Wayfinding consistency'],
+    name: 'Chief Finance & Investment Officer',
+    role: 'Chief Finance & Investment Officer',
+    image: '/branding/directors/cfio.png',
+    desc: 'Mengelola strategi keuangan, investasi, efisiensi modal, dan pertumbuhan nilai perusahaan.',
   },
   {
-    title: 'Boardroom & Corporate Room',
-    desc: 'Brand feel yang tetap kuat ketika diterapkan pada ruang rapat direksi, ruang presentasi, dan area bisnis.',
-    bullets: ['Boardroom wall branding', 'Investor presentation setting', 'Executive meeting environment'],
+    name: 'Direktur Pemasaran',
+    role: 'Direktur Pemasaran',
+    image: '/branding/directors/direktur-pemasaran.png',
+    desc: 'Membangun brand, campaign, customer growth, loyalty, dan positioning Supra Airways.',
   },
   {
-    title: 'Executive Lounge',
-    desc: 'Visualisasi suasana lounge maskapai yang nyaman, hangat, dan berkelas untuk penumpang bisnis maupun partner perusahaan.',
-    bullets: ['Premium lounge mood', 'Warm hospitality tone', 'Corporate premium touch'],
+    name: 'Direktur Relasi dan Manajemen Bisnis',
+    role: 'Direktur Relasi dan Manajemen Bisnis',
+    image: '/branding/directors/direktur-relasi-bisnis.png',
+    desc: 'Menjalin kemitraan, relasi institusi, dan kerja sama bisnis strategis.',
+  },
+  {
+    name: 'Direktur Kesehatan Awak dan Maskapai',
+    role: 'Direktur Kesehatan Awak dan Maskapai',
+    image: '/branding/directors/direktur-kesehatan-awak.png',
+    desc: 'Mengawal kesiapan awak, kesehatan kru, safety culture, dan standar operasional maskapai.',
   },
 ];
 
 const routes = ['Jakarta', 'Bali', 'Makassar', 'Surabaya', 'Singapore', 'Tokyo', 'Kuala Lumpur', 'Sydney'];
 
-const leaders = [
-  ['Komisaris', 'Pengawasan strategis, tata kelola, dan penguatan arah perusahaan.'],
-  ['Direktur Utama', 'Arah pertumbuhan bisnis, ekspansi rute, dan kualitas layanan.'],
-  ['Direktur Pemasaran', 'Brand, customer engagement, dan pertumbuhan pasar.'],
-  ['Chief Finance & Investment Officer', 'Keuangan korporat, investasi, dan penguatan modal.'],
-  ['Direktur Kesehatan Awak dan Maskapai', 'Kesiapan kru, keselamatan, dan standar kesehatan operasional.'],
-  ['Direktur Relasi dan Manajemen Bisnis', 'Kemitraan strategis, relasi institusi, dan peluang bisnis.'],
-];
+function fallbackImage(src) {
+  return (event) => {
+    event.currentTarget.onerror = null;
+    event.currentTarget.src = src;
+  };
+}
 
-const fallbackImage = (src) => (event) => {
-  event.currentTarget.onerror = null;
-  event.currentTarget.src = src;
-};
+function hideBrokenImage(event) {
+  event.currentTarget.style.display = 'none';
+  event.currentTarget.parentElement?.classList.add('isMissing');
+}
 
 function Header() {
   return h('header', { className: 'nav' },
     h('a', { href: '#home', className: 'brand' },
-      h('img', {
-        src: '/branding/supra-logo-icon.png',
-        alt: 'Supra Airways icon logo',
-        onError: fallbackImage('/logos/supra-logo-emblem.svg'),
-      }),
+      h('img', { src: logo.icon, alt: 'Supra Airways icon', onError: fallbackImage(logo.iconFallback) }),
       h('span', null, 'Supra Airways')
     ),
     h('nav', null,
-      h('a', { href: '#about' }, 'Tentang'),
       h('a', { href: '#identity' }, 'Logo'),
-      h('a', { href: '#showcase' }, 'Touchpoints'),
-      h('a', { href: '#leadership' }, 'Direksi')
+      h('a', { href: '#experience' }, 'Experience'),
+      h('a', { href: '#showcase' }, 'Showcase'),
+      h('a', { href: '#directors' }, 'Direksi')
     ),
-    h('a', { href: '#booking', className: 'navCta' }, 'Explore Brand')
+    h('a', { href: '#booking', className: 'navCta' }, 'Book Flight')
   );
 }
 
 function Hero() {
   return h('section', { id: 'home', className: 'hero section' },
-    h('div', { className: 'heroContent' },
+    h('div', { className: 'heroCopy' },
       h('p', { className: 'eyebrow' }, 'PT Supra Airways Tbk'),
-      h('h1', null, 'Landing page premium untuk maskapai yang tampil modern, elegan, dan siap dikembangkan.'),
-      h('p', { className: 'heroText' }, 'Konten landing page ini sudah diarahkan untuk menampilkan identitas brand Supra Airways secara lebih proper, termasuk versi logo dengan label, versi icon-only, serta area showcase penerapan brand di ruang kantor, terminal, boardroom, dan executive lounge.'),
+      h('h1', null, 'Redefining Premium Travel.'),
+      h('p', { className: 'heroText' }, 'Landing page resmi Supra Airways dengan identitas visual gold wing, red accent, navy interior, executive lounge, dan jajaran direksi perusahaan.'),
       h('div', { className: 'heroActions' },
-        h('a', { className: 'primaryBtn', href: '#identity' }, 'Lihat Logo System'),
-        h('a', { className: 'secondaryBtn', href: '#showcase' }, 'Lihat Brand Touchpoints')
+        h('a', { className: 'primaryBtn', href: '#showcase' }, 'Lihat Brand Showcase'),
+        h('a', { className: 'secondaryBtn', href: '#directors' }, 'Jajaran Direksi')
       )
     ),
-    h('div', { className: 'heroDisplay' },
-      h('div', { className: 'heroDisplayCard' },
-        h('img', {
-          src: '/branding/supra-logo-full.png',
-          alt: 'Supra Airways full logo',
-          onError: fallbackImage('/logos/supra-logo-wordmark.svg'),
-        }),
-        h('div', { className: 'heroDisplayMeta' },
-          h('span', null, 'Brand colors'),
-          h('strong', null, 'Navy • Gold • Red Accent')
-        )
+    h('div', { className: 'heroCard' },
+      h('div', { className: 'heroLogoPanel' },
+        h('img', { src: logo.full, alt: 'Supra Airways full logo', onError: fallbackImage(logo.fullFallback) })
+      ),
+      h('div', { className: 'heroRouteCard' },
+        h('span', null, 'Premium Lounge'),
+        h('strong', null, 'Navy • Gold • Red Accent')
       )
     )
   );
@@ -131,84 +135,79 @@ function Hero() {
 
 function Stats() {
   return h('section', { className: 'stats sectionCompact' }, stats.map((item) =>
-    h('article', { key: item[0], className: 'statCard' },
-      h('strong', null, item[0]),
-      h('span', null, item[1])
-    )
+    h('article', { className: 'statCard', key: item[0] }, h('strong', null, item[0]), h('span', null, item[1]))
   ));
 }
 
-function About() {
-  return h('section', { id: 'about', className: 'section splitSection' },
-    h('div', { className: 'sectionCopy' },
-      h('p', { className: 'eyebrow' }, 'Brand Direction'),
-      h('h2', null, 'Dibuat agar identitas maskapai terasa premium di setiap titik interaksi.'),
-      h('p', null, 'Struktur halaman ini menempatkan Supra Airways sebagai corporate airline brand yang kuat secara visual dan siap dikembangkan ke fitur lanjutan seperti booking, investor relations, jadwal penerbangan, loyalty program, dan company profile digital.'),
-      h('div', { className: 'routeWrap' }, routes.map((route) => h('span', { key: route }, route)))
-    ),
-    h('div', { className: 'serviceGrid' },
-      services.map((item) =>
-        h('article', { key: item.title },
-          h('h3', null, item.title),
-          h('p', null, item.desc)
-        )
+function Identity() {
+  return h('section', { id: 'identity', className: 'section identity' },
+    h('p', { className: 'eyebrow' }, 'Brand Identity'),
+    h('h2', null, 'Logo dipakai sebagai icon web dan logo brand utama.'),
+    h('p', { className: 'sectionLead' }, 'Background putih pada aset logo disiapkan untuk dihapus pada file PNG final. Halaman ini memakai logo full untuk brand, dan icon-only untuk favicon, navbar, serta brand mark kecil.'),
+    h('div', { className: 'logoGrid' },
+      h('article', { className: 'logoCard logoCardFull' },
+        h('img', { src: logo.full, alt: 'Supra Airways full logo', onError: fallbackImage(logo.fullFallback) }),
+        h('h3', null, 'Logo dengan label'),
+        h('p', null, 'Untuk hero, signage, company profile, proposal investor, dan official brand placement.')
+      ),
+      h('article', { className: 'logoCard logoCardIcon' },
+        h('img', { src: logo.icon, alt: 'Supra Airways icon only', onError: fallbackImage(logo.iconFallback) }),
+        h('h3', null, 'Icon-only'),
+        h('p', null, 'Untuk favicon, app icon, badge, boarding pass, tail mark, dan social media avatar.')
       )
     )
   );
 }
 
-function Identity() {
-  return h('section', { id: 'identity', className: 'section identitySection' },
-    h('p', { className: 'eyebrow' }, 'Brand Identity'),
-    h('h2', null, 'Versi logo dengan label dan icon-only'),
-    h('p', { className: 'sectionLead' }, 'Bagian ini sudah disiapkan untuk menampilkan beberapa versi logo Supra Airways. Struktur asset PNG sudah diarahkan ke folder public/branding supaya gampang diganti atau ditambah nanti.'),
-    h('div', { className: 'logoGridEnhanced' }, logoVariants.map((item) =>
-      h('article', { key: item.title, className: 'logoCardEnhanced' },
-        h('div', { className: 'logoPreview' },
-          h('img', {
-            src: item.path,
-            alt: item.title,
-            onError: fallbackImage(item.fallback),
-          })
-        ),
-        h('div', { className: 'logoCopy' },
-          h('h3', null, item.title),
-          h('p', null, item.note)
-        )
-      )
-    ))
+function Experience() {
+  return h('section', { id: 'experience', className: 'section experience' },
+    h('div', { className: 'sectionSplit' },
+      h('div', null,
+        h('p', { className: 'eyebrow' }, 'Passenger Experience'),
+        h('h2', null, 'Dari lounge, boarding gate, sampai flight information.'),
+        h('p', { className: 'sectionLead' }, 'Konsep landing page dibuat mengikuti arahan visual: premium lounge, corporate airport feel, dan layanan maskapai yang terasa matang.')
+      ),
+      h('div', { className: 'serviceGrid' }, services.map((item) =>
+        h('article', { key: item[0] }, h('h3', null, item[0]), h('p', null, item[1]))
+      ))
+    ),
+    h('div', { className: 'routeWrap' }, routes.map((route) => h('span', { key: route }, route)))
   );
 }
 
 function Showcase() {
-  return h('section', { id: 'showcase', className: 'section showcaseSection' },
-    h('p', { className: 'eyebrow' }, 'Application Showcase'),
-    h('h2', null, 'Konten landing page untuk area penerapan brand'),
-    h('p', { className: 'sectionLead' }, 'Semua poin di bawah ini merepresentasikan materi yang tadi diminta untuk dimasukkan ke landing page: reception area, airport touchpoint, boardroom, dan executive lounge.'),
-    h('div', { className: 'touchpointGrid' }, touchpoints.map((item, index) =>
-      h('article', { key: item.title, className: 'touchpointCard' },
-        h('div', { className: `touchpointVisual tone${(index % 4) + 1}` },
-          h('span', { className: 'touchpointBadge' }, 'Supra Airways'),
-          h('strong', null, item.title)
+  return h('section', { id: 'showcase', className: 'section showcase' },
+    h('p', { className: 'eyebrow' }, 'Brand Application'),
+    h('h2', null, 'Konten visual untuk landing page.'),
+    h('p', { className: 'sectionLead' }, 'Visual lounge, boardroom, dan reception dipakai sebagai konten utama supaya website terasa seperti brand maskapai beneran, bukan sekadar template.'),
+    h('div', { className: 'showcaseGrid' }, showcases.map((item) =>
+      h('article', { className: 'showcaseCard', key: item.title },
+        h('div', { className: 'imageShell' },
+          h('img', { src: item.image, alt: item.title, onError: hideBrokenImage }),
+          h('span', null, 'Supra Airways')
         ),
-        h('div', { className: 'touchpointCopy' },
-          h('h3', null, item.title),
-          h('p', null, item.desc),
-          h('ul', null, item.bullets.map((bullet) => h('li', { key: bullet }, bullet)))
-        )
+        h('div', { className: 'showcaseBody' }, h('h3', null, item.title), h('p', null, item.desc))
       )
     ))
   );
 }
 
-function Leadership() {
-  return h('section', { id: 'leadership', className: 'section leadershipSection' },
-    h('p', { className: 'eyebrow' }, 'Leadership Structure'),
-    h('h2', null, 'Struktur eksekutif PT Supra Airways Tbk'),
-    h('div', { className: 'leaderGrid' }, leaders.map((item) =>
-      h('article', { key: item[0] },
-        h('h3', null, item[0]),
-        h('p', null, item[1])
+function Directors() {
+  return h('section', { id: 'directors', className: 'section directors' },
+    h('p', { className: 'eyebrow' }, 'Board of Directors'),
+    h('h2', null, 'Jajaran direksi PT Supra Airways Tbk'),
+    h('p', { className: 'sectionLead' }, 'Profil eksekutif ditampilkan sebagai bagian konten landing page agar brand terasa punya struktur perusahaan yang jelas dan profesional.'),
+    h('div', { className: 'directorGrid' }, directors.map((person) =>
+      h('article', { className: 'directorCard', key: person.role },
+        h('div', { className: 'directorPhoto' },
+          h('img', { src: person.image, alt: person.role, onError: hideBrokenImage }),
+          h('span', null, person.role.slice(0, 2).toUpperCase())
+        ),
+        h('div', { className: 'directorBody' },
+          h('small', null, person.name),
+          h('h3', null, person.role),
+          h('p', null, person.desc)
+        )
       )
     ))
   );
@@ -216,47 +215,35 @@ function Leadership() {
 
 function Booking() {
   return h('section', { id: 'booking', className: 'section booking' },
-    h('div', { className: 'bookingCopy' },
-      h('p', { className: 'eyebrow' }, 'Ready to Extend'),
-      h('h2', null, 'Landing page ini sudah proper untuk jadi base website maskapai.'),
-      h('p', null, 'Selanjutnya halaman ini bisa dikembangkan menjadi portal booking, informasi armada, layanan corporate travel, investor relations, serta company profile PT Supra Airways Tbk.'),
-      h('div', { className: 'assetHint' },
-        h('strong', null, 'Folder asset PNG yang disiapkan:'),
-        h('code', null, 'public/branding/')
-      )
+    h('div', null,
+      h('p', { className: 'eyebrow' }, 'Plan Your Flight'),
+      h('h2', null, 'Siap terbang bersama Supra Airways?'),
+      h('p', null, 'Landing page ini siap dikembangkan ke fitur booking, jadwal penerbangan, loyalty program, dan investor relations.')
     ),
     h('form', null,
       h('label', null, 'Origin', h('input', { placeholder: 'Jakarta' })),
       h('label', null, 'Destination', h('input', { placeholder: 'Tokyo' })),
       h('label', null, 'Departure Date', h('input', { type: 'date' })),
-      h('label', null, 'Passenger Type', h('input', { placeholder: 'Business / Economy' })),
+      h('label', null, 'Class', h('input', { placeholder: 'Business / Economy' })),
       h('button', { type: 'button' }, 'Search Flight Demo')
     )
   );
 }
 
 export default function App() {
+  React.useEffect(() => {
+    const link = document.querySelector("link[rel='icon']") || document.createElement('link');
+    link.rel = 'icon';
+    link.href = logo.icon;
+    document.head.appendChild(link);
+  }, []);
+
   return h(React.Fragment, null,
     h(Header),
-    h('main', null,
-      h(Hero),
-      h(Stats),
-      h(About),
-      h(Identity),
-      h(Showcase),
-      h(Leadership),
-      h(Booking)
-    ),
+    h('main', null, h(Hero), h(Stats), h(Identity), h(Experience), h(Showcase), h(Directors), h(Booking)),
     h('footer', null,
-      h('div', null,
-        h('strong', null, 'PT Supra Airways Tbk'),
-        h('span', null, 'Legendaris di Udara — premium airline brand concept')
-      ),
-      h('img', {
-        src: '/branding/supra-logo-icon.png',
-        alt: 'Supra Airways icon',
-        onError: fallbackImage('/logos/supra-logo-emblem.svg'),
-      })
+      h('div', null, h('strong', null, 'PT Supra Airways Tbk'), h('span', null, 'Redefining Premium Travel')), 
+      h('img', { src: logo.icon, alt: 'Supra Airways icon', onError: fallbackImage(logo.iconFallback) })
     )
   );
 }
