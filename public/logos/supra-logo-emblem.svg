@@ -1,0 +1,10 @@
+<svg width="640" height="640" viewBox="0 0 640 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="640" rx="120" fill="#071322"/>
+  <circle cx="320" cy="320" r="222" stroke="#D3A84F" stroke-width="20"/>
+  <circle cx="320" cy="320" r="178" stroke="#ffffff" stroke-opacity="0.2" stroke-width="2"/>
+  <path d="M172 339C241 270 319 220 482 193C381 251 319 309 274 413C242 378 212 354 172 339Z" fill="#D3A84F"/>
+  <path d="M226 422C315 352 392 307 508 290C419 345 361 391 314 474C284 451 259 435 226 422Z" fill="#F4D58A"/>
+  <path d="M160 402C206 399 250 407 299 431C239 436 192 427 160 402Z" fill="#C42E2E"/>
+  <text x="320" y="132" text-anchor="middle" fill="white" font-size="48" font-family="Arial, Helvetica, sans-serif" font-weight="800">SUPRA</text>
+  <text x="320" y="536" text-anchor="middle" fill="#C42E2E" font-size="34" font-family="Arial, Helvetica, sans-serif" font-weight="800" letter-spacing="8">AIRWAYS</text>
+</svg>
