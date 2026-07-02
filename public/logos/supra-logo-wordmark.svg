@@ -1,0 +1,9 @@
+<svg width="900" height="260" viewBox="0 0 900 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="260" rx="32" fill="#F7F1E6"/>
+  <path d="M94 122C173 84 265 54 418 43C338 76 284 114 248 165C193 143 145 130 94 122Z" fill="#D3A84F"/>
+  <path d="M206 174C293 117 392 76 555 62C450 103 354 159 303 217C273 196 242 183 206 174Z" fill="#071322"/>
+  <path d="M85 166C147 164 204 174 274 207C200 209 135 195 85 166Z" fill="#C42E2E"/>
+  <text x="410" y="122" fill="#071322" font-size="76" font-family="Arial, Helvetica, sans-serif" font-weight="900" letter-spacing="-4">Supra</text>
+  <text x="418" y="184" fill="#C42E2E" font-size="42" font-family="Arial, Helvetica, sans-serif" font-weight="900" letter-spacing="18">AIRWAYS</text>
+  <text x="424" y="222" fill="#6D7480" font-size="20" font-family="Arial, Helvetica, sans-serif" font-weight="700" letter-spacing="3">PT SUPRA AIRWAYS TBK</text>
+</svg>
