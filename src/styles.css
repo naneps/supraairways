@@ -1080,6 +1080,31 @@ p {
   border-color: rgba(240, 198, 111, 0.28);
 }
 
+.directorSocial {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--red);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: none;
+  transition: color 180ms ease, transform 180ms ease;
+}
+
+.directorSocial:hover {
+  color: var(--gold);
+  transform: translateY(-1px);
+}
+
+.directorSocial.onDark {
+  color: var(--gold-light);
+}
+
+.directorSocial.onDark:hover {
+  color: white;
+}
+
 .directorMeta {
   display: flex;
   align-items: center;

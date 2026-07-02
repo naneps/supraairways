@@ -6,6 +6,7 @@ import {
   CheckCircle2,
   Clock3,
   Coffee,
+  Instagram,
   Plane,
   Sparkles,
   ShieldCheck,
@@ -76,6 +77,7 @@ const directors = [
     image: '/branding/directors/direktur-utama.png',
     code: 'CEO',
     focus: 'Menjaga arah perusahaan tetap tajam: rute yang masuk akal, layanan yang konsisten, dan operasi yang bisa dipercaya.',
+    instagram: 'sawalatigin',
   },
   {
     name: 'Alif Rizki Ananta Harahap',
@@ -83,6 +85,7 @@ const directors = [
     image: '/branding/directors/komisaris.png',
     code: 'BOC',
     focus: 'Mengawasi keputusan besar perusahaan agar pertumbuhan tetap sehat, patuh, dan tidak asal mengejar ekspansi.',
+    instagram: 'alifrzkahrp',
   },
   {
     name: 'Nandang Eka Prasetya',
@@ -90,6 +93,7 @@ const directors = [
     image: '/branding/directors/cfio.png',
     code: 'CFIO',
     focus: 'Mengatur investasi armada, efisiensi modal, dan ruang tumbuh perusahaan dengan hitungan yang disiplin.',
+    instagram: '_nannnde',
   },
   {
     name: 'Tegar Putera Enggal Aperista',
@@ -97,6 +101,7 @@ const directors = [
     image: '/branding/directors/direktur-pemasaran.png',
     code: 'CMO',
     focus: 'Membuat Supra Airways mudah diingat: dari cerita brand, kampanye rute, sampai pengalaman pelanggan.',
+    instagram: 'sobatmarco',
   },
   {
     name: 'Muhamad Ilham Terguhriyadi',
@@ -104,6 +109,7 @@ const directors = [
     image: '/branding/directors/direktur-relasi-bisnis.png',
     code: 'CBD',
     focus: 'Membuka kerja sama dengan institusi, partner travel, dan klien korporat yang butuh layanan stabil.',
+    instagram: 'ilham_teguhriyadi',
   },
   {
     name: 'Muhamad Rafli Septian',
@@ -111,6 +117,7 @@ const directors = [
     image: '/branding/directors/direktur-kesehatan-awak.png',
     code: 'HSE',
     focus: 'Menjaga kru tetap siap bertugas, sehat, dan bekerja dalam budaya keselamatan yang tidak bisa ditawar.',
+    instagram: 'rafliseptiannn_',
   },
 ];
 
@@ -413,6 +420,18 @@ export default function Landing() {
               <div className="directorKicker">
                 <span className="badge badge-warning">{lead.code}</span>
                 <span>{lead.role}</span>
+                {lead.instagram && (
+                  <a
+                    className="directorSocial onDark"
+                    href={`https://instagram.com/${lead.instagram}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`Instagram ${lead.name}`}
+                  >
+                    <Instagram size={14} strokeWidth={2.3} aria-hidden="true" />
+                    @{lead.instagram}
+                  </a>
+                )}
               </div>
               <h3 className="card-title">{lead.name}</h3>
               <p>{lead.focus}</p>
@@ -445,7 +464,20 @@ export default function Landing() {
                   </div>
                   <div className="directorMeta">
                     <span>{String(index + 2).padStart(2, '0')}</span>
-                    <span>Dewan direksi Supra Airways</span>
+                    {person.instagram ? (
+                      <a
+                        className="directorSocial"
+                        href={`https://instagram.com/${person.instagram}`}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`Instagram ${person.name}`}
+                      >
+                        <Instagram size={14} strokeWidth={2.3} aria-hidden="true" />
+                        @{person.instagram}
+                      </a>
+                    ) : (
+                      <span>Dewan direksi Supra Airways</span>
+                    )}
                   </div>
                 </div>
               </article>
