@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import {
   ArrowRight,
+  AtSign,
   BadgeCheck,
   CheckCircle2,
   Clock3,
   Coffee,
-  Instagram,
   Plane,
   Sparkles,
   ShieldCheck,
@@ -428,7 +428,7 @@ export default function Landing() {
                     rel="noreferrer"
                     aria-label={`Instagram ${lead.name}`}
                   >
-                    <Instagram size={14} strokeWidth={2.3} aria-hidden="true" />
+                    <AtSign size={14} strokeWidth={2.3} aria-hidden="true" />
                     @{lead.instagram}
                   </a>
                 )}
@@ -472,7 +472,7 @@ export default function Landing() {
                         rel="noreferrer"
                         aria-label={`Instagram ${person.name}`}
                       >
-                        <Instagram size={14} strokeWidth={2.3} aria-hidden="true" />
+                        <AtSign size={14} strokeWidth={2.3} aria-hidden="true" />
                         @{person.instagram}
                       </a>
                     ) : (
