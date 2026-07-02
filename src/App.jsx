@@ -11,6 +11,8 @@ import Book from './pages/Book.jsx';
 import Confirmation from './pages/Confirmation.jsx';
 import Boarding from './pages/Boarding.jsx';
 import Manage from './pages/Manage.jsx';
+import About from './pages/About.jsx';
+import Investor from './pages/Investor.jsx';
 
 function ScrollManager() {
   const { pathname, hash } = useLocation();
@@ -45,6 +47,8 @@ function Shell() {
             <Route path="/confirmation" element={<Confirmation />} />
             <Route path="/boarding" element={<Boarding />} />
             <Route path="/manage" element={<Manage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/investor" element={<Investor />} />
             <Route path="*" element={<Landing />} />
           </Routes>
         </div>

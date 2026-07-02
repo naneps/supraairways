@@ -13,10 +13,10 @@ export default function SiteFooter() {
         </div>
       </div>
       <nav aria-label="Navigasi footer">
+        <Link to="/about">Tentang</Link>
+        <Link to="/investor">Investor</Link>
         <Link to="/flights">Penerbangan</Link>
         <Link to="/boarding">Boarding pass</Link>
-        <a href="/#directors">Perusahaan</a>
-        <Link to="/">Ke atas</Link>
       </nav>
     </footer>
   );

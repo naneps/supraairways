@@ -1,0 +1,397 @@
+/* ============================================================
+   Landing additions: destinations + loyalty
+   ============================================================ */
+.destinationsSection .sectionIntro,
+.experience .sectionIntro {
+  align-items: end;
+}
+
+.destinationGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.destinationCard {
+  position: relative;
+  display: block;
+  min-height: 340px;
+  overflow: hidden;
+  color: white;
+  background: var(--navy-900);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.destinationCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 32px 74px rgba(5, 11, 19, 0.24);
+}
+
+.destinationCard img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 700ms ease;
+}
+
+.destinationCard:hover img {
+  transform: scale(1.06);
+}
+
+.destinationCard::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(180deg, rgba(5, 11, 19, 0.05) 30%, rgba(5, 11, 19, 0.9));
+}
+
+.destinationBody {
+  position: absolute;
+  inset: auto 0 0;
+  z-index: 1;
+  padding: 22px;
+}
+
+.destinationMeta {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.destinationBody h3 {
+  margin: 6px 0 12px;
+  font-size: 1.9rem;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.destinationFare {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.destinationFare span {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.destinationFare strong {
+  font-size: 1.25rem;
+  color: var(--gold-light);
+  letter-spacing: -0.01em;
+}
+
+.loyaltyBand {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.95fr);
+  gap: clamp(28px, 5vw, 70px);
+  align-items: center;
+  width: 100%;
+  padding: clamp(60px, 8vw, 110px) max(18px, calc((100% - 1160px) / 2));
+  color: white;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(212, 162, 77, 0.22), transparent 22rem),
+    linear-gradient(135deg, var(--navy-950), var(--navy-800));
+}
+
+.loyaltyCopy p:not(.eyebrow) {
+  color: rgba(255, 255, 255, 0.74);
+  max-width: 40ch;
+}
+
+.loyaltyCopy .primaryButton {
+  margin-top: 26px;
+}
+
+.loyaltyTiers {
+  display: grid;
+  gap: 12px;
+}
+
+.loyaltyTier {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 18px 20px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  transition: transform 220ms ease, border-color 220ms ease, background 220ms ease;
+}
+
+.loyaltyTier:hover {
+  transform: translateX(6px);
+  border-color: rgba(240, 198, 111, 0.32);
+  background: rgba(240, 198, 111, 0.08);
+}
+
+.loyaltyTier svg {
+  flex: 0 0 auto;
+  color: var(--gold-light);
+}
+
+.loyaltyTier strong {
+  display: block;
+  font-size: 1.05rem;
+}
+
+.loyaltyTier span {
+  font-size: 0.86rem;
+  color: rgba(255, 255, 255, 0.66);
+}
+
+/* nav active state */
+.siteHeader nav a.is-current {
+  color: white;
+}
+
+.siteHeader nav a.is-current::after {
+  transform: scaleX(1);
+}
+
+/* ============================================================
+   Landing: business lines teaser
+   ============================================================ */
+.bizGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.bizCard {
+  padding: 28px;
+  color: white;
+  background: linear-gradient(160deg, var(--navy-800), var(--navy-950));
+  border: 1px solid rgba(240, 198, 111, 0.18);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+  transition: transform 240ms ease, border-color 240ms ease;
+}
+
+.bizCard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(240, 198, 111, 0.36);
+}
+
+.bizIcon {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  color: #171005;
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  border-radius: 14px;
+  flex: 0 0 auto;
+}
+
+.bizCard .bizIcon {
+  margin-bottom: 16px;
+}
+
+.bizKicker {
+  display: inline-block;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+}
+
+.bizCard h3 {
+  margin: 8px 0 10px;
+  font-size: 1.5rem;
+}
+
+.bizCard p {
+  margin-bottom: 18px;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.bizTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.bizTags span {
+  padding: 7px 12px;
+  color: rgba(255, 255, 255, 0.86);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.bizMore {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+  color: var(--navy-900);
+  font-weight: 800;
+}
+
+.bizMore:hover {
+  color: var(--gold);
+}
+
+.bizMore svg {
+  transition: transform 200ms ease;
+}
+
+.bizMore:hover svg {
+  transform: translateX(4px);
+}
+
+/* ============================================================
+   Promo band
+   ============================================================ */
+.promoBand {
+  width: min(1180px, calc(100% - 36px));
+  margin: 28px auto 0;
+}
+
+.promoInner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 26px;
+  color: white;
+  background:
+    radial-gradient(circle at 90% 30%, rgba(240, 198, 111, 0.24), transparent 18rem),
+    linear-gradient(120deg, var(--navy-900), var(--navy-700));
+  border: 1px solid rgba(240, 198, 111, 0.26);
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(5, 11, 19, 0.16);
+}
+
+.promoTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 13px;
+  color: #171005;
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  border-radius: 999px;
+  font-weight: 900;
+  font-size: 0.8rem;
+}
+
+.promoText {
+  display: grid;
+  gap: 3px;
+}
+
+.promoText strong {
+  font-size: 1.15rem;
+  letter-spacing: -0.01em;
+}
+
+.promoText span {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+.promoText b {
+  color: var(--gold-light);
+  letter-spacing: 0.05em;
+}
+
+.promoCta {
+  margin-left: auto;
+  gap: 7px;
+}
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+.faqList {
+  display: grid;
+  gap: 12px;
+  max-width: 920px;
+}
+
+.faqItem {
+  overflow: hidden;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+}
+
+.faqItem[open] {
+  border-color: rgba(212, 162, 77, 0.4);
+  box-shadow: 0 14px 36px rgba(5, 11, 19, 0.07);
+}
+
+.faqItem summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 20px 22px;
+  color: var(--navy-900);
+  font-weight: 800;
+  font-size: 1.05rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faqItem summary::-webkit-details-marker {
+  display: none;
+}
+
+.faqMark {
+  position: relative;
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+}
+
+.faqMark::before,
+.faqMark::after {
+  position: absolute;
+  content: "";
+  background: var(--gold);
+  border-radius: 2px;
+  transition: transform 260ms ease, opacity 260ms ease;
+}
+
+.faqMark::before {
+  top: 8px;
+  left: 0;
+  width: 18px;
+  height: 2px;
+}
+
+.faqMark::after {
+  top: 0;
+  left: 8px;
+  width: 2px;
+  height: 18px;
+}
+
+.faqItem[open] .faqMark::after {
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+.faqItem[open] summary {
+  color: var(--gold);
+}
+
+.faqItem p {
+  margin: 0;
+  padding: 0 22px 22px;
+  max-width: 68ch;
+  color: var(--muted);
+  line-height: 1.65;
+}
+

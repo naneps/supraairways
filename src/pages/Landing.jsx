@@ -4,6 +4,7 @@ import {
   ArrowRight,
   AtSign,
   BadgeCheck,
+  Bus,
   CheckCircle2,
   Clock3,
   Coffee,
@@ -280,6 +281,58 @@ export default function Landing() {
             </Link>
           ))}
         </div>
+      </section>
+
+      <section className="section bizSection" id="bisnis" data-animate="section">
+        <div className="sectionIntro">
+          <div>
+            <p className="eyebrow">Lini bisnis</p>
+            <h2>Bukan sekadar maskapai. Satu perjalanan, udara sampai darat.</h2>
+          </div>
+          <p>
+            Supra Airways menghubungkan masyarakat, bisnis, dan destinasi impian lewat integrasi
+            moda udara dan darat: solusi mobilitas menyeluruh dari rute global sampai ke pelosok
+            daerah.
+          </p>
+        </div>
+        <div className="bizGrid">
+          <article className="bizCard" data-animate="image">
+            <div className="bizIcon">
+              <Plane size={22} strokeWidth={2.1} aria-hidden="true" />
+            </div>
+            <span className="bizKicker">Airlines Division</span>
+            <h3>Maskapai penerbangan</h3>
+            <p>
+              Penerbangan domestik antar kota besar dan internasional ke destinasi strategis di Asia
+              dan dunia, dengan standar keselamatan internasional tertinggi.
+            </p>
+            <div className="bizTags">
+              <span>Domestik</span>
+              <span>Internasional</span>
+              <span>Keselamatan kelas dunia</span>
+            </div>
+          </article>
+          <article className="bizCard" data-animate="image">
+            <div className="bizIcon">
+              <Bus size={22} strokeWidth={2.1} aria-hidden="true" />
+            </div>
+            <span className="bizKicker">Travel &amp; Shuttle Division</span>
+            <h3>Travel &amp; shuttle eksekutif</h3>
+            <p>
+              Armada shuttle modern untuk koridor utama Jawa Barat, terhubung langsung ke bandara
+              terdekat untuk perjalanan antarmoda tanpa putus.
+            </p>
+            <div className="bizTags">
+              <span>Ciayumajakuning</span>
+              <span>Bandung Raya</span>
+              <span>Priangan Timur</span>
+            </div>
+          </article>
+        </div>
+        <Link className="bizMore" to="/about">
+          Pelajari lebih lengkap tentang Supra Airways
+          <ArrowRight size={17} strokeWidth={2.4} aria-hidden="true" />
+        </Link>
       </section>
 
       <section className="section experience" id="experience" data-animate="section">

@@ -5,9 +5,10 @@ import { assets } from '../lib/data.js';
 
 const links = [
   ['Beranda', '/'],
+  ['Tentang', '/about'],
   ['Penerbangan', '/flights'],
+  ['Investor', '/investor'],
   ['Check-in', '/manage'],
-  ['Boarding pass', '/boarding'],
 ];
 
 export default function SiteHeader() {
