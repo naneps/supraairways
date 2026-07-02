@@ -1,0 +1,8 @@
+<svg width="640" height="260" viewBox="0 0 640 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="260" rx="34" fill="#071322"/>
+  <path d="M112 145C181 111 255 74 404 60C338 88 300 117 270 156C218 149 169 146 112 145Z" fill="#D3A84F"/>
+  <path d="M210 169C286 111 358 82 520 69C417 111 344 156 304 205C273 188 244 178 210 169Z" fill="#F4D58A"/>
+  <path d="M104 176C167 171 226 178 285 203C209 202 155 196 104 176Z" fill="#C42E2E"/>
+  <text x="80" y="108" fill="white" font-size="58" font-family="Arial, Helvetica, sans-serif" font-weight="800" letter-spacing="-2">Supra</text>
+  <text x="83" y="226" fill="#C42E2E" font-size="42" font-family="Arial, Helvetica, sans-serif" font-weight="800" letter-spacing="16">AIRWAYS</text>
+</svg>
