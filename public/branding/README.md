@@ -1,14 +1,35 @@
 # Branding Assets for Landing Page
 
-Halaman React sudah diarahkan untuk membaca aset PNG dari folder ini.
+Halaman React sudah diarahkan untuk membaca aset PNG/WebP dari folder ini.
 
-Silakan tambahkan file berikut jika ingin mengganti fallback SVG dengan asset PNG final:
+## Logo
 
-- `supra-logo-full.png` → versi logo dengan label / wordmark
-- `supra-logo-icon.png` → versi icon-only
-- `showcase-reception.png` *(opsional)*
-- `showcase-airport.png` *(opsional)*
-- `showcase-boardroom.png` *(opsional)*
-- `showcase-lounge.png` *(opsional)*
+- `supra-logo-full.png` → logo dengan label: icon + **Supra Airways** + **PT Supra Airways Tbk**
+- `supra-logo-icon.png` → icon-only: sayap gold dengan aksen merah, tanpa nama dan tanpa background putih
 
-Saat file PNG belum tersedia, halaman akan fallback ke logo SVG lama yang sudah ada di repo.
+Logo dipakai untuk:
+
+- navbar brand
+- favicon web
+- hero section
+- brand identity section
+- footer icon
+
+## Showcase Images
+
+- `showcase-lounge.png` → executive lounge / reception premium
+- `showcase-boardroom.png` → ruang meeting direksi
+- `showcase-reception.png` → corporate frontdesk
+
+## Directors Images
+
+Simpan foto jajaran direksi di folder `public/branding/directors/` dengan nama:
+
+- `komisaris.png`
+- `direktur-utama.png`
+- `cfio.png`
+- `direktur-pemasaran.png`
+- `direktur-relasi-bisnis.png`
+- `direktur-kesehatan-awak.png`
+
+Saat file PNG/WebP belum ada, halaman tetap aman karena image yang gagal load akan disembunyikan dan diganti placeholder visual.
