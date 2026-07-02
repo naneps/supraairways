@@ -1,0 +1,8 @@
+<svg width="520" height="640" viewBox="0 0 520 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="520" height="640" rx="54" fill="#071322"/>
+  <path d="M106 520C159 356 236 204 414 70C366 223 319 372 289 560C236 541 176 527 106 520Z" fill="#D3A84F"/>
+  <path d="M179 481C246 339 302 230 398 134C361 271 333 405 321 563C273 526 229 502 179 481Z" fill="#F4D58A"/>
+  <path d="M113 560C190 552 261 570 343 610C247 621 174 607 113 560Z" fill="#C42E2E"/>
+  <text x="260" y="88" text-anchor="middle" fill="white" font-size="52" font-family="Arial, Helvetica, sans-serif" font-weight="900">S</text>
+  <text x="260" y="596" text-anchor="middle" fill="white" fill-opacity="0.62" font-size="18" font-family="Arial, Helvetica, sans-serif" font-weight="800" letter-spacing="6">SUPRA TAILFIN</text>
+</svg>
