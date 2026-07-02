@@ -8,6 +8,7 @@ import {
   CheckCircle2,
   Clock3,
   Coffee,
+  ExternalLink,
   Plane,
   Sparkles,
   ShieldCheck,
@@ -327,6 +328,15 @@ export default function Landing() {
               <span>Bandung Raya</span>
               <span>Priangan Timur</span>
             </div>
+            <a
+              className="bizExtLink"
+              href="https://travel.supraairways.space"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Kunjungi Supra Travel
+              <ExternalLink size={15} strokeWidth={2.4} aria-hidden="true" />
+            </a>
           </article>
         </div>
         <Link className="bizMore" to="/about">

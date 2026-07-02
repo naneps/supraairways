@@ -10,6 +10,7 @@ import {
   Target,
   CheckCircle2,
   ArrowRight,
+  ExternalLink,
   MapPin,
 } from 'lucide-react';
 import { assets } from '../lib/data.js';
@@ -156,6 +157,15 @@ export default function About() {
                 </div>
               ))}
             </div>
+            <a
+              className="btn btn-warning bizExtBtn"
+              href="https://travel.supraairways.space"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Kunjungi Supra Travel
+              <ExternalLink size={16} strokeWidth={2.4} aria-hidden="true" />
+            </a>
           </article>
         </section>
 

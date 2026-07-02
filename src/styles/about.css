@@ -1,6 +1,14 @@
 /* ============================================================
    About page
    ============================================================ */
+.bizExtBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  min-height: 46px;
+}
+
 .aboutHero {
   display: grid;
   grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.92fr);

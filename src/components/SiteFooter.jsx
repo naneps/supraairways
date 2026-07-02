@@ -16,7 +16,9 @@ export default function SiteFooter() {
         <Link to="/about">Tentang</Link>
         <Link to="/investor">Investor</Link>
         <Link to="/flights">Penerbangan</Link>
-        <Link to="/boarding">Boarding pass</Link>
+        <a href="https://travel.supraairways.space" target="_blank" rel="noreferrer">
+          Supra Travel
+        </a>
       </nav>
     </footer>
   );
